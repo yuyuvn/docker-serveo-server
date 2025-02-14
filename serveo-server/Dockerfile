@@ -3,7 +3,7 @@ LABEL maintainer="taichunmin@gmail.com"
 EXPOSE 22 80 443
 
 COPY docker-entrypoint.sh /usr/local/bin/
-ADD https://storage.googleapis.com/serveo/download/2018-05-08/serveo-linux-amd64 /usr/local/bin/serveo
+ADD https://github.com/u1i/tools/raw/master/serveo/serveo-linux-arm64 /usr/local/bin/serveo
 
 RUN \
   set -ex; \
